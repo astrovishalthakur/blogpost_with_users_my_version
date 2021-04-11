@@ -50,7 +50,7 @@
                     </div>
                     <div class="commentText">
                       {{comment.text|safe}}
-                      <span class="date sub-text">{{comment.comment_author.name}}</span>
+                      <span class="date sub-text">{{comment.comment_author.name}}{% if comment.comment_author.id == 1 %} (ADMIN) {% endif %}</span>
                     </div>
                 </li>
               </ul>
